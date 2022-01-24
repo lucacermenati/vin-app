@@ -1,0 +1,80 @@
+.slideshow-container
+{
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    height: 40%;
+}
+
+.slide
+{
+    text-align: center;
+    display: none;
+}
+
+.showing
+{
+    display: block;
+}
+
+.slide-image
+{
+    height: 200px;
+    width: auto;
+}
+
+.prev-next
+{
+    height: 12vh;
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top: 30vh;
+    z-index: 1;
+}
+
+.button
+{
+    color: #000000;
+    font-size: 18px;
+    height: 100%;
+    width: 3%;
+    text-align: center;
+}
+
+.button:hover
+{
+    color: #FE0865;
+}
+
+.prev
+{
+    float:left;
+    border-radius: 0 4px 4px 0;
+}
+
+.next
+{
+    float:right;
+    border-radius: 4px 0 0 4px;
+}
+
+.fade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
